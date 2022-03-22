@@ -1,7 +1,7 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
 
 const SearchByName = ({ setSearchName }) => {
-  const [name, setName] = useState('');
+  const [name, setName] = useState("");
 
   const handleInputChange = (e) => {
     setName(e.target.value);
@@ -11,13 +11,18 @@ const SearchByName = ({ setSearchName }) => {
     e.preventDefault();
     if (name.trim().length > 1) {
       setSearchName(name);
-      setName('');
+      setName("");
     }
   };
 
   return (
     <form onSubmit={handleSubmit}>
-      <input type="text" value={name} onChange={handleInputChange} />
+      <input
+        type="text"
+        value={name}
+        onChange={handleInputChange}
+        placeholder="Celebrity Name to look for"
+      />
     </form>
   );
 };
