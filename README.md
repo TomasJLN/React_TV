@@ -1,3 +1,2 @@
-# Simple APP finder Celebrity TV Shows from `api.tvmaze.com`
+# Simple React Practice APP finder Celebrity TV Shows from `api.tvmaze.com`
 
-## Using creat-react-app
